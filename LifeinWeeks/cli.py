@@ -30,11 +30,11 @@ def main():
         for date in parse_date(args.dates):
             calculate_weeks(birthday, date, args.verbose)
         
-    elif not args.input:
+    elif not args.continuous:
         calculate_weeks(birthday, parse_date("now")[0], args.verbose)
         
 
-    if args.input:
+    if args.continuous:
         
         active = True
         while active:
