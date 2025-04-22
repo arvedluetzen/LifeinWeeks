@@ -17,4 +17,4 @@ dependencies = [
 ]
 
 [project.scripts]
-lifeinweek = "LifeinWeeks.cli:main"
+lifeinweeks = "LifeinWeeks.cli:main"
