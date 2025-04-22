@@ -3,7 +3,7 @@ import datetime as dt
 
 def parse_date(dates_str: str) -> list[dt.date]:
     
-    print(f"parse_date: {dates_str}")
+    # print(f"parse_date: {dates_str}")
     
     dates = dates_str.split()
     
@@ -45,6 +45,7 @@ def to_date(date_str: str) -> dt.date:
 
 if __name__ == "__main__":
     
+    # Tests
     print("Test to_date:")
     
     print(f"{to_date("now") = }")

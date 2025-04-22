@@ -12,7 +12,7 @@ def main():
     
     parser.add_argument("-d", "--dates", help="Directly specify dates you want to be calculated")
     
-    parser.add_argument("-i", "--input", help="Will let you calculate dates continuously.",
+    parser.add_argument("-c", "--continuous", help="Will let you calculate dates continuously.",
                         action="store_true")
     
     parser.add_argument("-v", "--verbose", help="Output also corrected calculations.",
