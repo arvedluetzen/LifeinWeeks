@@ -1,0 +1,7 @@
+.python-version
+__pycache__/
+
+# Distribution / packaging
+build/
+*.egg-info/
+*.egg

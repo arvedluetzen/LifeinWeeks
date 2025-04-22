@@ -1,0 +1,20 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=64.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LifeinWeeks"
+version = "0.0.1"
+description = "A CLI tool to transform dates to weeks in a 4k Weeks Calendar"
+readme = "README.md"
+authors = [
+    { name = "Arved Luetzen", email = "arvedluetzen@gmail.com" }
+]
+dependencies = [
+
+]
+
+[project.scripts]
+lifeinweek = "LifeinWeeks.cli:main"
