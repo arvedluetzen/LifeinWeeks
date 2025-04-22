@@ -26,8 +26,12 @@ def main():
     if not birthday:
         raise ValueError("Birthday had a format that could not be parsed")
     
-    for date in parse_date(args.dates):
-        calculate_weeks(birthday, date, args.verbose)
+    if args.dates is not None:
+        for date in parse_date(args.dates):
+            calculate_weeks(birthday, date, args.verbose)
+        
+    elif not args.input:
+        calculate_weeks(birthday, parse_date("now")[0], args.verbose)
         
 
     if args.input:
